@@ -1,0 +1,18 @@
+﻿@page
+@model Logistics_Management_System_App.Pages.Consignment_bookingModel
+@{
+}
+<h3>Consignment Booking</h3>
+@if (Model.hasData) { 
+    <p>@Model.UserName</p>
+    <p>@Model.EmailId</p>
+}
+<div class="container">
+    <form method="POST">
+        <label for="fname">User Name</label><br>
+        <input type="" id="fname" name="User Name"><br>
+        <label for="">Email Id</label><br>
+        <input type="email" id="gmail" name="Email Id"><br>
+        <input type="button" value="Next" onclick="btnNext">
+    </form>
+</div>
